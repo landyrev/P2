@@ -1,5 +1,5 @@
 #MicroXplorer Configuration settings - do not modify
-#Sat Nov 08 17:21:11 MSK 2014
+#Sat Nov 08 18:13:42 MSK 2014
 File.Version=4
 KeepUserPlacement=false
 Mcu.Family=STM32F4
@@ -97,6 +97,13 @@ RCC.VCOI2SOutputFreq_Value=192000000
 RCC.VCOInputFreq_Value=1000000
 RCC.VCOOutputFreq_Value=192000000
 RCC.VcooutputI2S=96000000
+SPI1.CalculateBaudRate-RX_Only_Simplex_Unidirect_Slave=8.0 MBits/s
+SPI1.Direction-RX_Only_Simplex_Unidirect_Slave=SPI_DIRECTION_2LINES_RXONLY
+SPI1.IPParameters=VirtualType-RX_Only_Simplex_Unidirect_Slave,Direction-RX_Only_Simplex_Unidirect_Slave,NSS-RX_Only_Simplex_Unidirect_Slave,TIMode-RX_Only_Simplex_Unidirect_Slave,CalculateBaudRate-RX_Only_Simplex_Unidirect_Slave,Mode-RX_Only_Simplex_Unidirect_Slave
+SPI1.Mode-RX_Only_Simplex_Unidirect_Slave=SPI_MODE_SLAVE
+SPI1.NSS-RX_Only_Simplex_Unidirect_Slave=SPI_NSS_SOFT
+SPI1.TIMode-RX_Only_Simplex_Unidirect_Slave=SPI_TIMODE_DISABLED
+SPI1.VirtualType-RX_Only_Simplex_Unidirect_Slave=VM_SLAVE
 SPI3.CalculateBaudRate-TX_Only_Simplex_Unidirect_Master=8.0 MBits/s
 SPI3.Direction-TX_Only_Simplex_Unidirect_Master=SPI_DIRECTION_2LINES
 SPI3.IPParameters=TIMode-TX_Only_Simplex_Unidirect_Master,CalculateBaudRate-TX_Only_Simplex_Unidirect_Master,Mode-TX_Only_Simplex_Unidirect_Master,Direction-TX_Only_Simplex_Unidirect_Master,NSS-TX_Only_Simplex_Unidirect_Master,VirtualType-TX_Only_Simplex_Unidirect_Master
